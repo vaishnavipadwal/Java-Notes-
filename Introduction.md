@@ -1,4 +1,4 @@
-# What is java 
+# What is Java 
 Java is both a programming language and a platform. means Java is not just a language. It's also a platform — meaning it provides a whole environment for building and running applications.This environment includes:
 - Java Runtime Environment (JRE): Lets you run Java programs.
 - Java Development Kit (JDK): Lets you write and compile Java programs.
@@ -8,7 +8,7 @@ Java is a high-level, object-oriented, and general-purpose programming language.
 - Object-oriented: Based on real-world ideas like objects
 - General-purpose: You can use it for almost anything — apps, websites, games, systems, you name it.
 
-# Features of java 
+# Features of Java 
 1. simple
 - Java is easy to learn if you know basic programming logic.
 - The syntax is clean and readable.
@@ -34,7 +34,7 @@ Java is a high-level, object-oriented, and general-purpose programming language.
 - Java supports multithreading, allowing multiple tasks to run simultaneously.
 - This improves performance in applications like games or multimedia apps.
 
-# Why java is popular?
+# Why Java is so popular?
 1. Write Once, Run Anywhere (WORA)
 - Java programs are compiled into bytecode, which can run on any device with the Java Virtual Machine (JVM). This makes Java platform-independent. Developers don’t have to write different code for different operating systems. This portability is one of Java’s biggest strengths.
 2. Secure and Reliable
