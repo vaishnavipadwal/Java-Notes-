@@ -56,4 +56,36 @@ Java is a high-level, object-oriented, and general-purpose programming language.
 8. Continuous Development and Updates
 - Java is maintained and updated regularly by Oracle and the open-source community. With each new version, new features, performance improvements, and security enhancements are introduced, keeping Java modern and efficient.
 
+# Basic syntax of Java
+```
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
+}
+```
+## Explanation:
+1. public class HelloWorld {
+- public – This means this class is accessible from anywhere.
+- class – This keyword is used to define a class (a blueprint for objects).
+- HelloWorld – This is the name of the class. It must match the file name (HelloWorld.java).
+2. public static void main(String[] args) {
+- public – Can be accessed by the JVM from anywhere.
+- static – Belongs to the class, not to any object.
+- void – It means this method does not return anything.
+- main – The method name. Always written like this: main
+- String[] args – This is used to accept command-line input. It’s an array of Strings.
+3. System.out.println("Hello, world!");
+- System – A built-in class that provides access to system-level stuff.
+- out – Represents the output stream (where you want to print).
+- println() – A method used to print text and then go to the next line.
+4. println() – A method used to print text and then go to the next line.
+- { } – These curly braces define blocks of code. Each class and method uses them to wrap content.
+- ; – Every statement ends with a semicolon in Java. Think of it as a full stop in English.
+
+
+
+
+
+
 
