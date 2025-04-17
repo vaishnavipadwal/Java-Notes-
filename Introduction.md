@@ -84,8 +84,13 @@ public class HelloWorld {
 - ; – Every statement ends with a semicolon in Java. Think of it as a full stop in English.
 
 
-
-
+## Interface 
+An interface in Java is like a blueprint. It is used to specify a set of methods that a class must implement. Think of it as a contract — if a class "signs" the interface, it must provide code for the methods inside it. Interface only contains method declarations, not the body or logic. It is used to achieve abstraction and multiple inheritance in Java.
+```
+interface InterfaceName {
+    void methodName(); // no body, just declaration
+}
+```
 
 
 
