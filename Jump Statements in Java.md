@@ -83,3 +83,27 @@ Start
 Positive number
 End
 ```
+
+### **Program: Method that Returns the Sum of Two Numbers**
+```java
+public class ReturnExample {
+    
+    // Method that returns the sum of two integers
+    static int add(int a, int b) {
+        int sum = a + b;
+        return sum;  // returns the result to the caller
+    }
+
+    public static void main(String[] args) {
+        int result = add(10, 20);  // calling the method
+        System.out.println("Sum: " + result);
+    }
+}
+```
+
+---
+
+### **Output:**
+```
+Sum: 30
+```
