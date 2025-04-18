@@ -1,7 +1,6 @@
 
-### **Operators and Expressions in Java**
+## **Operators and Expressions in Java**
 
----
 
 ### **Operators**  
 Operators are symbols used to perform operations on variables and values.
