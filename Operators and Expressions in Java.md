@@ -200,6 +200,7 @@ Now p: 8
 Result: a is greater
 ```
 
+### **What is java.util.Scanner**
 The `java.util.Scanner` is a **class in Java** that is used to **read input from the user** — like numbers, strings, or even entire lines — using the keyboard or any input stream.
 
 ---
