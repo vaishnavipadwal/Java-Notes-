@@ -1,4 +1,4 @@
-### **5. Data Types, Variables, and Type Casting**
+### **Data Types, Variables, and Type Casting**
 
 ---
 
