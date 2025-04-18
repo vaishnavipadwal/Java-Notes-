@@ -125,7 +125,7 @@ public class WeekdaySwitch {
 
 ---
 
-### ** Output:**
+### **Output:**
 ```
 Enter a number between 1 and 7 to find the day of the week: 3
 Wednesday
