@@ -69,6 +69,78 @@ public class Main {
     }
 }
 ```
+---
+
+### **Program 1: Default Constructor Example**
+
+```java
+class Book {
+    String title;
+    String author;
+
+    // Default constructor
+    Book() {
+        title = "Unknown Title";
+        author = "Unknown Author";
+    }
+
+    void displayDetails() {
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Book b1 = new Book();  // Default constructor is called
+        b1.displayDetails();    // Output: Title: Unknown Title, Author: Unknown Author
+    }
+}
+```
+
+### **Output:**
+```
+Title: Unknown Title
+Author: Unknown Author
+```
 
 ---
+
+### **Program 2: Parameterized Constructor Example**
+
+```java
+class Employee {
+    String name;
+    int age;
+
+    // Parameterized constructor
+    Employee(String n, int a) {
+        name = n;
+        age = a;
+    }
+
+    void displayInfo() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Employee Age: " + age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee e1 = new Employee("John Doe", 30);  // Parameterized constructor is called
+        e1.displayInfo();                            // Output: Employee Name: John Doe, Employee Age: 30
+
+        Employee e2 = new Employee("Jane Smith", 25);  // Another parameterized constructor call
+        e2.displayInfo();                             // Output: Employee Name: Jane Smith, Employee Age: 25
+    }
+}
+```
+
+### **Output:**
+```
+Employee Name: John Doe
+Employee Age: 30
+Employee Name: Jane Smith
+Employee Age: 25
+```
 
