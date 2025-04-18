@@ -1,4 +1,4 @@
-### **Constructors in Java**
+# **Constructors in Java**
 
 A **constructor** in Java is a special method that is called when an object of a class is created. The purpose of a constructor is to **initialize** the newly created object. Constructors are automatically invoked when an object is created using the `new` keyword.
 
