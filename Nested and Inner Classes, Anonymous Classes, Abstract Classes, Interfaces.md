@@ -62,7 +62,7 @@ Here, **InnerClass** is a **non-static nested class** and requires an instance o
 
 ---
 
-### ** 2.Anonymous Classes in Java**
+### **2.Anonymous Classes in Java**
 
 An **anonymous class** is a **local class** without a name. It is used to instantiate objects of a class with a simple and concise syntax. Anonymous classes are often used to implement interfaces or extend classes.
 
