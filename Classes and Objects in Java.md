@@ -1,7 +1,7 @@
 ## **Classes and Objects in Java**
 
 
-### **What is a Class in Java? (Detailed Definition)**
+### **What is a Class in Java?**
 
 A **class** in Java is a **user-defined data type** that acts as a **blueprint** or **template** for creating objects. It encapsulates data for the object (fields/variables) and code (methods/functions) that operates on that data. It defines what **properties** (also called attributes or fields) and **behaviors** (methods/functions) every object of that class should have.
 
