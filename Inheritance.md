@@ -206,4 +206,311 @@ Animal eats food
 Animal
 Dog barks
 ```
+---
 
+### 🔹 **Single Inheritance**
+
+#### **Example 1: Inheriting properties and calculating area**
+```java
+class Shape {
+    int length = 10;
+    int breadth = 5;
+}
+
+class Rectangle extends Shape {
+    void area() {
+        System.out.println("Area of Rectangle: " + (length * breadth));
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Rectangle obj = new Rectangle();
+        obj.area();
+    }
+}
+```
+**Output:**
+```
+Area of Rectangle: 50
+```
+
+---
+
+#### **Example 2: Using constructor chaining**
+```java
+class Employee {
+    String name;
+    int id;
+
+    Employee(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    void display() {
+        System.out.println("Name: " + name + ", ID: " + id);
+    }
+}
+
+class Developer extends Employee {
+    String language;
+
+    Developer(String name, int id, String language) {
+        super(name, id);
+        this.language = language;
+    }
+
+    void showDetails() {
+        display();
+        System.out.println("Programming Language: " + language);
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Developer d = new Developer("Riya", 102, "Java");
+        d.showDetails();
+    }
+}
+```
+**Output:**
+```
+Name: Riya, ID: 102
+Programming Language: Java
+```
+
+---
+
+### 🔹 **Multilevel Inheritance**
+
+#### **Example 3: Animal → Dog → Puppy**
+```java
+class Animal {
+    void eat() {
+        System.out.println("Animal eats");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Puppy extends Dog {
+    void weep() {
+        System.out.println("Puppy weeps");
+    }
+}
+
+public class Demo {
+    public static void main(String[] args) {
+        Puppy p = new Puppy();
+        p.eat();
+        p.bark();
+        p.weep();
+    }
+}
+```
+**Output:**
+```
+Animal eats
+Dog barks
+Puppy weeps
+```
+
+---
+
+#### **Example 4: Bank → Account → SavingsAccount**
+```java
+class Bank {
+    String bankName = "State Bank";
+}
+
+class Account extends Bank {
+    int accNo = 1001;
+    String holderName = "Ankit";
+}
+
+class SavingsAccount extends Account {
+    double balance = 15000.75;
+
+    void displayDetails() {
+        System.out.println("Bank: " + bankName);
+        System.out.println("Account No: " + accNo);
+        System.out.println("Holder: " + holderName);
+        System.out.println("Balance: ₹" + balance);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        SavingsAccount sa = new SavingsAccount();
+        sa.displayDetails();
+    }
+}
+```
+**Output:**
+```
+Bank: State Bank
+Account No: 1001
+Holder: Ankit
+Balance: ₹15000.75
+```
+
+---
+
+### 🔹 **Hierarchical Inheritance**
+
+#### **Example 5: Vehicle base with Bike and Car subclasses**
+```java
+class Vehicle {
+    void start() {
+        System.out.println("Vehicle starts");
+    }
+}
+
+class Bike extends Vehicle {
+    void ride() {
+        System.out.println("Riding bike");
+    }
+}
+
+class Car extends Vehicle {
+    void drive() {
+        System.out.println("Driving car");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Bike b = new Bike();
+        b.start();
+        b.ride();
+
+        Car c = new Car();
+        c.start();
+        c.drive();
+    }
+}
+```
+**Output:**
+```
+Vehicle starts
+Riding bike
+Vehicle starts
+Driving car
+```
+
+---
+
+#### **Example 6: University with Student and Professor**
+```java
+class University {
+    String uniName = "Tech University";
+}
+
+class Student extends University {
+    void showStudent() {
+        System.out.println("Student of " + uniName);
+    }
+}
+
+class Professor extends University {
+    void showProfessor() {
+        System.out.println("Professor at " + uniName);
+    }
+}
+
+public class Info {
+    public static void main(String[] args) {
+        Student s = new Student();
+        Professor p = new Professor();
+
+        s.showStudent();
+        p.showProfessor();
+    }
+}
+```
+**Output:**
+```
+Student of Tech University
+Professor at Tech University
+```
+
+---
+
+### 🔹 **Multiple Inheritance (Using Interfaces)**
+
+#### **Example 7: Printable and Showable interfaces**
+```java
+interface Printable {
+    void print();
+}
+
+interface Showable {
+    void show();
+}
+
+class Report implements Printable, Showable {
+    public void print() {
+        System.out.println("Printing report...");
+    }
+
+    public void show() {
+        System.out.println("Showing report...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Report r = new Report();
+        r.print();
+        r.show();
+    }
+}
+```
+**Output:**
+```
+Printing report...
+Showing report...
+```
+
+---
+
+#### **Example 8: Interface conflict resolution**
+```java
+interface A {
+    default void message() {
+        System.out.println("Message from A");
+    }
+}
+
+interface B {
+    default void message() {
+        System.out.println("Message from B");
+    }
+}
+
+class C implements A, B {
+    public void message() {
+        System.out.println("Resolved message in C");
+        A.super.message(); // calling A's version
+        B.super.message(); // calling B's version
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        C obj = new C();
+        obj.message();
+    }
+}
+```
+**Output:**
+```
+Resolved message in C
+Message from A
+Message from B
+```
