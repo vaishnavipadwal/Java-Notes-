@@ -66,7 +66,7 @@ public class HashSetDemo {
 
 ---
 
-### 🟩 **Output:**
+### **Output:**
 ```
 Fruits in the set: [Mango, Banana, Apple]
 Contains Mango? true
@@ -75,4 +75,64 @@ Size of set: 2
 ```
 
 *(Note: Order may vary because HashSet does not maintain insertion order.)*
+
+
+###  **Java Program: Demonstrating HashSet Operations**
+
+```java
+import java.util.HashSet;
+
+public class HashSetDemo {
+    public static void main(String[] args) {
+        // Creating a HashSet of Strings
+        HashSet<String> fruits = new HashSet<>();
+
+        // Adding elements to the HashSet
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Mango");
+        fruits.add("Orange");
+        fruits.add("Banana"); // Duplicate, will be ignored
+
+        // Displaying the HashSet
+        System.out.println("HashSet: " + fruits);
+
+        // Removing an element
+        fruits.remove("Mango");
+        System.out.println("After removing Mango: " + fruits);
+
+        // Checking if an element exists
+        if (fruits.contains("Apple")) {
+            System.out.println("Apple is present in the HashSet.");
+        }
+
+        // Checking the size
+        System.out.println("Size of HashSet: " + fruits.size());
+
+        // Clearing all elements
+        fruits.clear();
+        System.out.println("After clearing: " + fruits);
+
+        // Checking if empty
+        if (fruits.isEmpty()) {
+            System.out.println("HashSet is empty now.");
+        }
+    }
+}
+```
+
+---
+
+### **Output:**
+
+```
+HashSet: [Orange, Banana, Apple, Mango]
+After removing Mango: [Orange, Banana, Apple]
+Apple is present in the HashSet.
+Size of HashSet: 3
+After clearing: []
+HashSet is empty now.
+```
+
+---
 
