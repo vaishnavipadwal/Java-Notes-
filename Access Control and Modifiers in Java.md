@@ -164,5 +164,4 @@ public class Main {
     }
 }
 ```
-
 Here, `Vehicle` is **final**, so it cannot be subclassed, and `displaySpeed()` is **final**, so it cannot be overridden.
